@@ -126,7 +126,7 @@ html[lang="en"] .lang-toggle__en { color: var(--gold-300); font-weight: 700; }
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url("assets/hero-bg.jpg") center 20% / cover no-repeat;
+  background: url("youssef-post.jpeg") center 20% / cover no-repeat;
   z-index: -2;
 }
 .hero-bg::after {
