@@ -90,8 +90,19 @@
             <span class="center-name-ar">سنتر التميز</span>
           </div>
         </div>
+
+        <p class="stages-label" data-ar="ومتاح كمان" data-en="Also available">ومتاح كمان</p>
+        <div class="center-cards">
+          <div class="center-card">
+            <span class="center-name">Online</span>
+            <span class="center-name-ar">أونلاين</span>
+          </div>
+          <div class="center-card">
+            <span class="center-name">Private</span>
+            <span class="center-name-ar">برايفت</span>
+          </div>
+        </div>
       </div>
-    </div>
   </section>
 
   <!-- VIDEO -->
@@ -138,15 +149,25 @@
         </div>
 
         <div class="field">
+          <label for="mode" data-ar="نظام الحضور" data-en="Attendance type">نظام الحضور</label>
+          <select id="mode" name="mode" required>
+            <option value="" disabled selected data-ar="اختر النظام" data-en="Choose type"></option>
+            <option value="center" data-ar="في السنتر" data-en="At the center">في السنتر</option>
+            <option value="online" data-ar="أونلاين" data-en="Online">أونلاين</option>
+            <option value="private" data-ar="برايفت" data-en="Private">برايفت</option>
+          </select>
+        </div>
+
+        <div class="field" id="centerField">
           <label for="center" data-ar="السنتر المفضل" data-en="Preferred center">السنتر المفضل</label>
-          <select id="center" name="center" required>
+          <select id="center" name="center">
             <option value="" disabled selected data-ar="اختر السنتر" data-en="Choose center"></option>
             <option value="top">Top Center</option>
             <option value="eman">El-Eman Center</option>
             <option value="tamayuz">El-Tamayuz Center</option>
           </select>
         </div>
-
+        
         <div class="field field--full">
           <label for="notes" data-ar="ملاحظات (اختياري)" data-en="Notes (optional)">ملاحظات (اختياري)</label>
           <textarea id="notes" name="notes" rows="3"></textarea>
